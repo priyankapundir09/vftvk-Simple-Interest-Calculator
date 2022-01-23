@@ -2,9 +2,6 @@ body {background-color:black;
     font-family:arial;
     color:white
 }
-h1{color:grey;
-    font-family:verdana
-}
 .maindiv {background-color:white;
     color:black;
     width: 500px;
@@ -12,3 +9,24 @@ h1{color:grey;
     border-radius: 25px;
     align-items: center
 }
+label{
+    float: left;
+    text-align:left;
+    width:25%;
+}
+.input1 .input2 .input3{
+    float:left;
+    width:50%;
+  }
+select{
+    float:left;
+    width:8%;
+}
+h1{color:grey;
+    font-family:verdana
+}
+.buttons{
+    float:left;
+}
+  
+

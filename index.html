@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Simple Interest Calculator</title>
+        <title>Web App – Simple Interest Calculator</title>
     <script src="script.js"></script>
     <link rel="stylesheet" href="style.css">
     </head>
@@ -9,12 +9,14 @@
         <div class="maindiv">
         <h1>Simple Interest Calculator</h1>
 
-        Amount <input type="number"  id="principal">  <br/>
-        Interest Rate <input type="range"  id="rate" min="1" max="10" step= "0.25" onchange="updateRate()" value="default_val"> 
+        <label for="principal">Amount </label>
+        <input class="input1" type="number"  id="principal">  <br/>
+        <label for="rate">Interest Rate </label>
+        <input class="input2" type="range"  id="rate" min="1" max="20" step= "0.25" onchange="updateRate()" value="default_val"> 
         <span id="rate_val">
             10.25%
         </span> <br/>
-        No. of Years <select id="years">
+        <label for="years">No. of Years </label><select class="input3" id="years">
             <option value="1">1</option>
             <option value="2 ">2</option>
             <option value="3">3</option>
@@ -27,15 +29,14 @@
             <option value="10">10</option>
         </select>  <br/>
 
-        <button onclick="compute()">Compute Interest</button><br>
+        <button  onclick="compute()">Compute Interest</button><br>
         <span id="result">
 
         </span>
 
         <footer>
 
-            &#169; Everyone Can Get Rich <br>
-            A Calculator by Priyanka Pundir
+            &#169; Everyone Can Get Rich 
     
     
     </footer>
